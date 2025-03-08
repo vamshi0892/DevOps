@@ -4,5 +4,5 @@ New-AzResourceGroup -Name VamshiResourceGroup -Location "East US"
 
 New-AzResourceGroupDeployment `
   -Name blanktemplate `
-  -ResourceGroupName VamshiResourceGroup `
+  -ResourceGroupName myResourceGroup `
   -TemplateFile $templateFile
