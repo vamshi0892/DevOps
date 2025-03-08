@@ -1,8 +1,8 @@
-$templateFile = ".\00-resource-group.json"
+$templateFile = "C:\Users\vamsh\OneDrive\Desktop\DevOps\ARM_Templates\00-resource-group.json"
 
-New-AzResourceGroup -Name VamshiResourceGroup2 -Location "East US"
+New-AzResourceGroup -Name VamshiResourceGroup -Location "East US"
 
 New-AzResourceGroupDeployment `
   -Name blanktemplate `
-  -ResourceGroupName VamshiResourceGroup2 `
+  -ResourceGroupName VamshiResourceGroup `
   -TemplateFile $templateFile
