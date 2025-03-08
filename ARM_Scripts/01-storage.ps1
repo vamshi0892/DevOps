@@ -1,1 +1,6 @@
-az deployment group create --name addstorage --resource-group adlsofazuresynapsee --template-file .\01-storage.json
+$templateFile = ".\01-storage.json"
+
+New-AzResourceGroupDeployment `
+    -Name addstorage `
+    -ResourceGroupName VamshiResourceGroup2 `
+    -TemplateFile $templateFile
